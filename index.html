@@ -7,11 +7,11 @@
   </head>
   <body>
     <script>
-      let vals = [1, 2, 3, 4, 5];
-      let factorial = vals.reduce((accumulator, currentValue) => {
-        return accumulator * currentValue;
-      });
-      console.log(factorial);
+      let userInput = prompt("Enter a Number : ").toUpperCase();
+      console.log(userInput);
+      if (userInput === "LMS") {
+        window.open("http://auplmscs.com/spring2025/login/index.php");
+      }
     </script>
   </body>
 </html>
