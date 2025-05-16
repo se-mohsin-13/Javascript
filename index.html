@@ -6,12 +6,17 @@
     <title>Document</title>
   </head>
   <body>
+    <button id="btn">Change Title</button>
+
     <script>
-      let userInput = prompt("Enter a Number : ").toUpperCase();
-      console.log(userInput);
-      if (userInput === "LMS") {
-        window.open("http://auplmscs.com/spring2025/login/index.php");
-      }
+      const handleTitle = () => {
+        if (document.title === "Document") {
+          document.title = "Changed";
+        } else {
+          document.title = "Document";
+        }
+      };
+      document.getElementById("btn").addEventListener("click", handleTitle);
     </script>
   </body>
 </html>
